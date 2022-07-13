@@ -1,0 +1,18 @@
+{
+    "/FILMS": {
+      "target": "https://apifilmeslista.herokuapp.com",
+      "secure": false,
+      "pathRewrite": {
+        "^/FILMS": ""
+      },
+      "changeOrigin": true
+    },
+    "/BACKEND": {
+      "target": "https://backend-usabilidade.herokuapp.com/",
+      "secure": false,
+      "pathRewrite": {
+        "^/BACKEND": ""
+      },
+      "changeOrigin": true
+    }
+  }

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MovieList - Minha Lista</title>
+</head>
+
+<body>
+
+    <header>
+        <svg width="80" height="120" viewBox="0 0 36 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M24 21V0H27.5V16.5H35.5V21H24Z" fill="#65C6FE"/>
+            <path d="M0 0V21H4.5V5.5L9 21H14.5L19 5.5L18.5 21H24V0H16.5L12 15.5L7.5 0H0Z" fill="#D9D9D9"/>
+        </svg>
+        <nav>
+            <ul class="nav_links">
+                <li><a (click)="goToHome()">Home</a></li>
+                <li><a (click)="goToMyList()">Minha Lista</a></li>
+                <app-search-bar (onFilter)="filterList($event)"></app-search-bar>
+            </ul>
+        </nav>
+        <div *ngIf="user.imageUrl" class="pfp" [ngStyle]="{'background-image': 'url(' + user.imageUrl + ')'}" (click)="openDialog()"></div>
+    </header>
+    <div class="titulo">Meus Filmes</div>
+    <app-movie mode="my-list" [filter]="listFilter"></app-movie>
+</body>
+</html>

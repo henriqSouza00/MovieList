@@ -1,0 +1,2 @@
+Link Hospedado FrontEnd: https://frontend-angular-64fe0.web.app/home
+Link Hospedado BackEnd: https://backend-usabilidade.herokuapp.com/

@@ -1,0 +1,2 @@
+<app-login-acess *ngIf="mode === 'login'" (onChangeMode)="changeMode('register')"></app-login-acess>
+<app-register-acess *ngIf="mode === 'register'" (onChangeMode)="changeMode('login')"></app-register-acess>
